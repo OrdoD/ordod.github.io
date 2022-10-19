@@ -26,6 +26,22 @@ ul {
     margin: 0;
 }
 
+input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    background-color: #fff;
+    color: #000;
+}
+
+input[type="text"]:focus {
+    border: 3px solid #555;
+}
+
 .container {
     height: auto;
     width: auto;
