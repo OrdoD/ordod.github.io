@@ -67,3 +67,13 @@ ul {
     background-color: #FFF;
     color: black;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #312f3a;
+    color: #fff;
+    text-align: center;
+}
