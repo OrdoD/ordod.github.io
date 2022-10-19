@@ -18,3 +18,21 @@ recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
 // Constants for page items
+
+//Capture functions
+function sendInput(){
+    let txt = document.getElementById("txt").value;
+    if (txt == ""){
+        return;
+    }
+    //This is where we would send captured text...
+    console.log(txt);
+    //Get Response
+    
+    //Cleanup
+    document.getElementById("txt").value = "";
+}
+
+function captureMic(){
+    //Capture mic input
+}

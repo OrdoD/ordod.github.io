@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tripartite Project FA22</title>
     <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" type="text/javascript"></script>
 </head>
 <header>
@@ -14,7 +15,7 @@
 <body>
     <div class="container">
         <div>
-            <img src="https://media.discordapp.net/attachments/730143569448403076/1031682062693961838/maxresdefaultx.jpg" height="500px" width="500px" alt="Vergil Drinking Boba Tea">
+            <img src="IMG_1324.jpg" height="500px" width="500px" alt="Bineet EVIL">
         </div>
     </div>
     <div class="container">
@@ -22,11 +23,12 @@
             <form>
                 <div>
                     <input id="txt" type="text" class="txt" size="50"/>
+                    <button id="mic" style="font-size:24px" type="button" onmousedown="captureMic()"><i class="fa fa-microphone"></i></button>
                     <p class="hint">
                     Hint: Type or hold the mic button then press ask question!
                     </p>
                 </div>
-                <button id="send" class="button button1" type="submit">Ask Question</button>
+                <button id="send" class="button button1" type="button" onclick="sendInput()">Ask Question</button>
             </form>
         </div>
     </div>
