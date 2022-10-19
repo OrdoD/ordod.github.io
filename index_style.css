@@ -1,0 +1,82 @@
+body,
+html {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    height: inherit;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1,
+p {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+a{
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.hint{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+ul {
+    margin: 0;
+}
+
+.container {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hints span {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+.item {
+    width: 10em;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: black;
+    color: white;
+    border: 2px solid #FFF;
+}
+
+.button1:hover {
+    background-color: #FFF;
+    color: black;
+}
