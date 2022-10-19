@@ -11,7 +11,6 @@ const recognition = new SpeechRecognition();
 //const speechRecognitionList = new SpeechGrammarList();
 
 // Set properties of Speech Recognition instance
-recognition.grammars = speechRecognitionList;
 recognition.continuous = false;
 recognition.lang = 'en-US';
 recognition.interimResults = false;
@@ -25,14 +24,20 @@ function sendInput(){
     if (txt == ""){
         return;
     }
-    //This is where we would send captured text...
+    //Send here
     console.log(txt);
-    //Get Response
     
     //Cleanup
     document.getElementById("txt").value = "";
 }
 
 function captureMic(){
-    //Capture mic input
+    recognition.start();
+    console.log("recognition.start() called");
+}
+recognition.onresult = function (event) {
+    console.log("recognition.onResult called");
+    var capturedText = event.results[0][0].transcript;
+    document.getElementById("txt").value = capturedText;
+    console.log(capturedText);
 }
