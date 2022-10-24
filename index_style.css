@@ -39,6 +39,21 @@ a{
     font-size: 12px;
 }
 
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+#chat{
+	white-space: pre-wrap;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	border-style: double;
+	overflow-y: scroll;
+	height: 150px;
+}
+
 ul {
     margin: 0;
 }

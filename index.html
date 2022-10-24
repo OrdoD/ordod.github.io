@@ -7,7 +7,8 @@
     <title>Tripartite Project FA22</title>
     <link rel="stylesheet" href="index_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="script.js" type="text/javascript"></script>
 </head>
 <header>
     <h1> Meet Bineet... A USV helpdesk chatbot!</h1?
@@ -23,13 +24,15 @@
             <form>
                 <div>
                     <input id="txt" type="text" class="txt" size="50"/>
-                    <button id="mic" style="font-size:24px" type="button" onclick="captureMic()"><i class="fa fa-microphone"></i></button>
+                    <button id="mic" style="font-size:24px" type="button"><i class="fa fa-microphone"></i></button>
                     <p class="hint">
-                    Hint: Type or hold the mic button then press ask question!
+                    Hint: Type or press the mic button once- then press "Ask Question"!
                     </p>
                 </div>
-                <button id="send" class="button button1" type="button" onclick="sendInput()">Ask Question</button>
+                <button id="send" class="button button1" type="button">Ask Question</button>
             </form>
+			<h6> Chat </h6>
+			<p id="chat"> </p>
         </div>
     </div>
     <div>

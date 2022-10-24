@@ -16,28 +16,48 @@ recognition.lang = 'en-US';
 recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
-// Constants for page items
-
-//Capture functions
-function sendInput(){
-    let txt = document.getElementById("txt").value;
-    if (txt == ""){
-        return;
-    }
-    //Send here
-    console.log(txt);
-    
-    //Cleanup
-    document.getElementById("txt").value = "";
-}
-
-function captureMic(){
-    recognition.start();
-    console.log("recognition.start() called");
-}
 recognition.onresult = function (event) {
     console.log("recognition.onResult called");
     var capturedText = event.results[0][0].transcript;
     document.getElementById("txt").value = capturedText;
     console.log(capturedText);
 }
+
+//Page item variables
+var chatText = "";
+
+//Helpful functions
+function strOnlySpaces(str){
+	return str.trim().length === 0;
+}
+
+//Jquery page functions
+$(document).ready(function(){
+	
+	//Capture functions
+	$("#mic").click(function(){
+		recognition.start();
+		console.log("recognition.start() called");
+	});
+	
+	$("#send").click(function(){
+		let txt = $("#txt").val();
+		if (txt == "" || strOnlySpaces(txt)){
+			$("#txt").val("");
+			return;
+		}
+		//Send here
+		console.log(txt);
+	
+    
+		//Cleanup
+		$("#txt").val("");
+		
+		//Chatbox
+		chatText += "You: " + txt + "\n";
+		$("#chat").text(chatText);
+		$("#chat").scrollTop($("#chat").height())
+	});
+});
+
+
