@@ -1,0 +1,30 @@
+html, body {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.box {
+    position: absolute;
+}
+
+.overlay {
+    z-index: 10;
+}
+
+.icontainer {
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
