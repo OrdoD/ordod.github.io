@@ -195,7 +195,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Daniel Ordonez - email@email_client.com
+Daniel Ordonez - dordonez@usv.net
 
 Your Name - [@Pradheon](https://twitter.com/Pradheon) - pradheon@gmail.com
 
