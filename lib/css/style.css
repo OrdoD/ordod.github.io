@@ -28,3 +28,59 @@ html, body {
     justify-content: center;
     align-items: end;
 }
+
+.chat { 
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 300px;
+	width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	height: 90%;
+	width: 100%;
+	background-color: white;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 10px;
+}
+
+#bot {
+	margin-right: auto;
+}
+
+#user {
+	margin-left: auto;
+}
+
+.response {
+	display: flex;
+	align-items: center;
+	margin: 1%;
+}
+
+.bot {
+	font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,  
+	monospace;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 980px) {
+    .container {
+          flex-direction: column; 
+          justify-content: flex-start;
+      }
+      .chat {
+          width: 75vw;
+          margin: 10vw;
+      }
+  }
