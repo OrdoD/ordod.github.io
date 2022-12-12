@@ -103,13 +103,13 @@
         <div>
             <!-- Video Player -->
             <div class="overflow-hidden box">
-                <iframe id="video" src="https://www.youtube-nocookie.com/embed/6qYTQI8FqzQ?autoplay=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&iv_load_policy=3&cc_load_policy=0&playlist=6qYTQI8FqzQ&vq=hd1080" frameborder="0" allowfullscreen></iframe>
+                <iframe id="video" src="https://www.youtube-nocookie.com/embed/4TpEi96URYE?autoplay=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&iv_load_policy=3&cc_load_policy=0&playlist=4TpEi96URYE&vq=hd1080" frameborder="0" allowfullscreen></iframe>
             </div>
             <!-- Text Input & Microphone Button -->
             <div class="box overlay">
                 <div class="icontainer">
                     <div class="input-group w-50">
-                        <input id="input" type="text" class="form-control" placeholder="Enter text..." aria-label="Enter text..." aria-describedby="basic-addon1">
+                        <input id="input" type="text" class="form-control" placeholder="Enter text..." aria-label="Enter text..." aria-describedby="basic-addon1" atuocomplete="false" autofocus="true" />
                         <span class="btn btn-secondary input-group-text" id="basic-addon1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
                                 <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"></path>
@@ -120,8 +120,9 @@
                 </div>
             </div>
             <!-- Chat History -->
-            <div>
+            <div id="chat" class="chat">
                 <!-- TODO: Add chat history box to top right corner of page and have chat history display here. -->
+                <div id="messages" class="messages"></div>
             </div>
         </div> 
     </body>
