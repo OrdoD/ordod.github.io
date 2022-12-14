@@ -31,10 +31,10 @@ html, body {
 
 .chat { 
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 0;
-    height: 300px;
-	width: 20vw;
+    height: 250px;
+	width: 15vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
